@@ -37,7 +37,7 @@
 	border-radius: 15px;
 	
 	display: inline-block;
-	padding: 5px;
+	padding: 7px;
 	margin: 0px 0px 1px 1px;
 }
 
@@ -45,11 +45,13 @@
 
 /* Corner Image Marker */
 .corner_marker_left {
+	background-color: #337AB7;
 	width: 50px;
 	height: 100px;
 	float: left;
 }
 .corner_marker_right {
+	background-color: #337AB7;
 	width: 50px;
 	height: 100px;
 	float: right;

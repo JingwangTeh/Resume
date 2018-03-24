@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Bevan');
+
 /* Site Wrapper */
 #site_wrapper {
 	font-family: Arial;
 	font-size: 16px;
-    border: 10px solid transparent;
-    border-image: url('../img/marker.png') 30 round;
+    border: 10px solid #337AB7;
 }
 #site_wrapper p {
     word-wrap: break-word;
@@ -25,10 +26,11 @@
 	}
 }
 #sub_section_personal {
-	border-bottom: 3px solid #337AB7;
+	border-bottom: 10px solid #337AB7;
 }
 #sub_section_education {
 	padding-right: 25px;
+	max-width: 50%;
 }
 #sub_section_skills {
 	padding-left: 25px;
@@ -38,7 +40,11 @@
 .inner_section {
 	padding: 0px 20px;
 }
-
+@media screen and (max-width: 800px) {
+	#sub_section_education {
+		max-width: 100%;
+	}
+}
 
 
 /*****Start of sub_section_personal*****/
@@ -59,6 +65,7 @@
 }
 #self_desc { /* Description about self */
 	font-size: 20px;
+	text-align: center;
 	padding: 0px 5px 0px 5px;
 }
 @media screen and (max-width: 800px) {
@@ -130,12 +137,15 @@
 /*****Start of sub_section_education*****/
 /* Education */
 #education h1 {
+	font-family: 'Bevan', Arial;
 	text-align: center;
-	margin: 0px;
+	margin: 0px 0px 15px 0px;
 }
 .edu_entries { /* Education Container */
 	position: relative; /* relative for year and grade absolute positioning */
-	margin-top: 15px; /* space between edu container */
+}
+.edu_entries:not(:first-child) {
+	margin-top: 25px; /* space between edu container */
 }
 .edu_entries > * {
 	margin: 0px;
@@ -173,15 +183,33 @@
 @media screen and (max-width: 800px) {
 	#education {
 		text-align: center;
+		margin: 25px 0px 15px 0px;
 	}
 }
 
 /* Major Subjects */
 #majorSubjects h1 {
+	font-family: 'Bevan', Arial;
 	text-align: center;
-	margin: 20px 0px 0px 0px;
-	padding-bottom: 10px;
+	margin: 30px 0px 15px 0px;
 }
+
+/* Notable Projects */
+#projects h1 {
+	font-family: 'Bevan', Arial;
+	text-align: center;
+	margin: 25px 0px 15px 0px;
+}
+.project_entries {
+	margin-bottom: 15px;
+}
+.project_entries p:first-child {
+	font-size: 16px;
+	border-left: 5px solid rgb(51, 122, 183);
+	padding-left: 3px;
+}
+
+
 /*****End of sub_section_education*****/
 
 
@@ -190,8 +218,9 @@
 /*****Start of sub_section_skills*****/
 /* Skills */
 #skills h1 {
+	font-family: 'Bevan', Arial;
 	text-align: center;
-	margin: 0px 0px 5px 0px;
+	margin: 0px 0px 15px 0px;
 }
 #skills h2 { /* Skills Categories */
 	font-size: 20px;
@@ -207,12 +236,20 @@
 	margin: 0px auto;
 }
 @media screen and (max-width: 800px) {
+	#skills h1 {
+		margin: 25px 0px 15px 0px;
+	}
 	#skillChartWrapper {
 		width: 60%;
 	}
 }
 
 /* Qualities */
+#qualities h1 {
+	font-family: 'Bevan', Arial;
+	text-align: center;
+	margin: 25px 0px 5px 0px;
+}
 #qualities .progress {
 	margin-bottom: 5px;
 }
@@ -223,12 +260,22 @@
 }
 
 /* Languages */
+#languages h1 {
+	font-family: 'Bevan', Arial;
+	text-align: center;
+	margin: 25px 0px 5px 0px;
+}
 #languages li {
 	display: inline-block;
 	padding-right: 25px;
 }
 
 /* Interests */
+#interests h1 {
+	font-family: 'Bevan', Arial;
+	text-align: center;
+	margin: 25px 0px 5px 0px;
+}
 #interests li {
 	display: inline-block;	
 }
@@ -239,12 +286,52 @@
 
 
 /*---Experience---*/
-#subsection_experience {
-	background-color: green;
+#experiences h1 {
+	font-family: 'Bevan', Arial;
+	text-align: center;
+	margin: 10px 0px 5px 0px;
 }
-#work {
-	background-color: red;
+.work_entries {
+	margin: 0px 50px 35px 50px;
+	position: relative; /* positioning for absolute border bottom */
 }
-#work p {
-	background-color: cyan;
+/* Border bottom for .work_entries */
+/*.work_entries::after {
+	content: "";
+	background-color: rgb(51, 122, 183);
+	position: absolute;
+	bottom: 0;
+	left: 32.5%;
+	height: 1px;
+	width: 35%;
+}*/
+.work_place {
+	font-size: 30px;
+	font-weight: bold;
+	display: inline-block;
+}
+.work_department {
+	font-size: 20px;
+	font-style: italic;
+	display: inline-block;
+}
+.work_period {
+	display: inline-block;
+	padding-right: 10px;
+}
+.work_role {
+	display: inline-block;
+	padding-left: 10px;
+	border-left: 5px solid rgb(51, 122, 183);
+}
+.work_achievement p {
+	padding-top: 10px;
+	color: rgb(51, 122, 183);
+	display: block;
+	font-weight: bold;
+}
+.work_achievement_lists {
+	list-style-type: circle;
+	padding-left: 18px; /* padded left to align list icon */
+
 }
