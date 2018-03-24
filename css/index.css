@@ -45,6 +45,12 @@
 		max-width: 100%;
 	}
 }
+#sub_section_created {
+	border-top: 10px solid #337AB7;	
+}
+
+
+
 
 
 /*****Start of sub_section_personal*****/
@@ -208,9 +214,8 @@
 	border-left: 5px solid rgb(51, 122, 183);
 	padding-left: 3px;
 }
-
-
 /*****End of sub_section_education*****/
+
 
 
 
@@ -285,6 +290,10 @@
 /*****End of sub_section_skills*****/
 
 
+
+
+
+/*****Start of sub_section_experience*****/
 /*---Experience---*/
 #experiences h1 {
 	font-family: 'Bevan', Arial;
@@ -333,5 +342,20 @@
 .work_achievement_lists {
 	list-style-type: circle;
 	padding-left: 18px; /* padded left to align list icon */
-
 }
+/*****End of sub_section_experience*****/
+
+
+
+
+
+/*****Start of sub_section_experience*****/
+#footer {
+	text-align: center;
+}
+/*****End of sub_section_experience*****/
+
+
+
+
+
