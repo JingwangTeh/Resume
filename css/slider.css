@@ -1,0 +1,12 @@
+.slider {
+	opacity: 0;
+}
+.slided {
+	opacity: 1;
+	position: relative; /* Property for slideUp Animation */
+	animation: slideUp 2s ease-out;
+}
+@keyframes slideUp {
+    from { opacity: 0; top: 15px;} 
+    to { opacity: 1; top: 0px; }
+}

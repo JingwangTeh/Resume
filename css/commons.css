@@ -1,0 +1,67 @@
+/* Flex Row */
+.flex_row {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between; 	/* Flex Items Horizontal Positioning */
+}
+.flex_row > div {
+	flex: 1;
+}
+
+@media screen and (max-width: 800px) {
+	.flex_row {
+		flex-flow: column nowrap;
+	}
+}
+
+
+
+/* Flex Column */
+.flex_col {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+
+
+/* Rounded Corner Lists */
+.rounded_lists {
+	padding: 3px;
+}
+.rounded_lists li, 
+.rounded_list {
+	color: white;
+	font-weight: bold;
+	background-color: #337AB7;
+	border: 1px solid white;
+	border-radius: 15px;
+	
+	display: inline-block;
+	padding: 5px;
+	margin: 0px 0px 1px 1px;
+}
+
+
+
+/* Corner Image Marker */
+.corner_marker_left {
+	width: 50px;
+	height: 100px;
+	float: left;
+}
+.corner_marker_right {
+	width: 50px;
+	height: 100px;
+	float: right;
+}
+@media screen and (max-width: 800px) {
+	.corner_marker_left,
+	.corner_marker_right {
+		display: none;
+	}
+}
+
+
+
+
+

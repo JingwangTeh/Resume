@@ -1,0 +1,250 @@
+/* Site Wrapper */
+#site_wrapper {
+	font-family: Arial;
+	font-size: 16px;
+    border: 10px solid transparent;
+    border-image: url('../img/marker.png') 30 round;
+}
+#site_wrapper p {
+    word-wrap: break-word;
+}
+
+
+
+/* Main, Sub, and Inner Sections */
+.main_section {
+}
+.sub_section {
+/*Test Properties*/
+	padding: 20px 0px; /* If double scroll bar appears due to slider */
+}
+@media screen and (max-width: 800px) {
+	.sub_section {
+/*Test Properties*/
+		padding: 10px 0px;
+	}
+}
+#sub_section_personal {
+	border-bottom: 3px solid #337AB7;
+}
+#sub_section_education {
+	padding-right: 25px;
+}
+#sub_section_skills {
+	padding-left: 25px;
+}
+#sub_section_experience {
+}
+.inner_section {
+	padding: 0px 20px;
+}
+
+
+
+/*****Start of sub_section_personal*****/
+/* Description */
+#description h1 { /* Name */
+	font-size: 36px;
+	font-weight: bold;
+	text-align: center;
+	
+	position: relative;
+	margin: 30px 0px 10px 0px;
+}
+.self_details { /* Container with Details about self (citizenship, nric, marital status, etc) */
+	text-align: center;
+}
+.self_details li {
+	font-size: 16px;
+}
+#self_desc { /* Description about self */
+	font-size: 20px;
+	padding: 0px 5px 0px 5px;
+}
+@media screen and (max-width: 800px) {
+	#description {
+		padding: 10px 0px;
+	}
+	#description h1 {
+		text-align: center;
+	}
+	#self_desc {
+		display: none;
+	}
+}
+
+/* Photo */
+#photo {
+	flex: 0.5; /* Smaller Middle Section */
+}
+#photo p { /* Photo Container */
+	text-align: center;
+}
+#photo img { /* Photo of self */
+	width: 200px;
+	height: 200px;
+	
+	border: 3px solid #1C1D21;
+	border-radius: 50%;
+	padding-top: 25px;
+}
+@media screen and (max-width: 800px) {
+	#photo {
+		order: -1; /* Display photo first before desc and contact */
+		padding: 10px 0px;
+	}
+}
+
+/* Contact */
+#contact p {
+	font-size: 17px;
+	text-align: right;
+}
+#contact img {
+	width: 50px;
+	height: 50px;
+	padding: 5px;
+}
+@media screen and (max-width: 800px) {
+	#contact {
+		display: flex;
+		flex-flow: row wrap; /* Change into row layout */
+		justify-content: space-between;
+		padding: 10px 0px;
+	}
+	#contact p {
+		text-align: center;
+		padding: 5px 5px;
+		flex: 1;
+	}
+	#contact img {
+		display: none;
+	}
+}
+/*****End of sub_section_personal*****/
+
+
+
+
+
+/*****Start of sub_section_education*****/
+/* Education */
+#education h1 {
+	text-align: center;
+	margin: 0px;
+}
+.edu_entries { /* Education Container */
+	position: relative; /* relative for year and grade absolute positioning */
+	margin-top: 15px; /* space between edu container */
+}
+.edu_entries > * {
+	margin: 0px;
+}
+.edu_year,
+.edu_grade {
+	font-size: 16px;
+	font-weight: bold;
+	color: #337AB7;
+	
+	position: absolute;
+	top: 0px;
+}
+.edu_year {
+	left: 0px;
+}
+.edu_grade {
+	right: 0px;
+}
+.edu_course {
+	font-size: 26px;
+	font-weight: bold;
+	padding-top: 20px; /* space for year and grade */
+}
+.edu_institute {
+	font-size: 20px;
+}
+.achievement_lists {
+	list-style-type: circle;
+	padding-left: 18px; /* padded left to align list icon */
+}
+.achievement_lists li {
+	font-size: 16px;
+}
+@media screen and (max-width: 800px) {
+	#education {
+		text-align: center;
+	}
+}
+
+/* Major Subjects */
+#majorSubjects h1 {
+	text-align: center;
+	margin: 20px 0px 0px 0px;
+	padding-bottom: 10px;
+}
+/*****End of sub_section_education*****/
+
+
+
+
+/*****Start of sub_section_skills*****/
+/* Skills */
+#skills h1 {
+	text-align: center;
+	margin: 0px 0px 5px 0px;
+}
+#skills h2 { /* Skills Categories */
+	font-size: 20px;
+	font-weight: bold;
+	display: inline-block;
+	margin: 0px;
+}
+#skills li { /* Skills Entries */
+	font-size: 16px;
+}
+#skillChartWrapper { /* Skill Chart */
+	width: 70%;
+	margin: 0px auto;
+}
+@media screen and (max-width: 800px) {
+	#skillChartWrapper {
+		width: 60%;
+	}
+}
+
+/* Qualities */
+#qualities .progress {
+	margin-bottom: 5px;
+}
+#qualities .progress-bar {
+	text-align: left;
+	padding-left: 25%;
+	font-weight: bold;
+}
+
+/* Languages */
+#languages li {
+	display: inline-block;
+	padding-right: 25px;
+}
+
+/* Interests */
+#interests li {
+	display: inline-block;	
+}
+#interests li:not(:first-child)::before {
+	content: ' | ';
+}
+/*****End of sub_section_skills*****/
+
+
+/*---Experience---*/
+#subsection_experience {
+	background-color: green;
+}
+#work {
+	background-color: red;
+}
+#work p {
+	background-color: cyan;
+}
