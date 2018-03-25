@@ -257,8 +257,10 @@
 }
 #qualities .progress {
 	margin-bottom: 5px;
+	height: 20px;
 }
 #qualities .progress-bar {
+	font-size: 16px;
 	text-align: left;
 	padding-left: 25%;
 	font-weight: bold;
@@ -354,8 +356,3 @@
 	text-align: center;
 }
 /*****End of sub_section_experience*****/
-
-
-
-
-
