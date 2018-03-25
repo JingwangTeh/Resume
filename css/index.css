@@ -166,7 +166,8 @@
 }
 .edu_year,
 .edu_grade {
-	font-size: 24px;
+	/*font-size: 24px;*/
+	font-size: 16px;
 	font-weight: bold;
 	color: #337AB7;
 	
@@ -332,12 +333,14 @@
 	/*display: inline-block;*/
 }
 .work_period {
-	font-size: 24px;
+	/*font-size: 24px;*/
+	font-size: 16px;
 	display: inline-block;
 	padding-right: 10px;
 }
 .work_role {
-	font-size: 24px;
+	/*font-size: 24px;*/
+	font-size: 18px;
 	display: inline-block;
 	padding-left: 10px;
 	border-left: 5px solid rgb(51, 122, 183);
@@ -368,12 +371,14 @@
 	margin-bottom: 15px;
 }
 .project_entries p:first-child {
-	font-size: 24px;
+	/*font-size: 24px;*/
+	font-size: 16px;
 	border-left: 5px solid rgb(51, 122, 183);
 	padding-left: 3px;
 }
 .project_entries a {
-	font-size: 24px;
+	/*font-size: 24px;*/
+	font-size: 16px;
 }
 /*****End of sub_section_experience*****/
 
