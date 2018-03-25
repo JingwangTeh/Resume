@@ -19,7 +19,7 @@
 /*Test Properties*/
 	padding: 20px 0px; /* If double scroll bar appears due to slider */
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	.sub_section {
 /*Test Properties*/
 		padding: 10px 0px;
@@ -45,7 +45,7 @@
 .inner_section {
 	padding: 0px 20px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	#sub_section_education,
 	#sub_section_skills,
 	#sub_section_experience,
@@ -82,7 +82,7 @@
 	text-align: center;
 	padding: 0px 5px 0px 5px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	#description {
 		padding: 10px 0px;
 	}
@@ -109,7 +109,7 @@
 	border-radius: 50%;
 	padding-top: 25px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	#photo {
 		order: -1; /* Display photo first before desc and contact */
 		padding: 10px 0px;
@@ -126,7 +126,7 @@
 	height: 50px;
 	padding: 5px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	#contact {
 		display: flex;
 		flex-flow: row wrap; /* Change into row layout */
@@ -194,7 +194,7 @@
 .achievement_lists li {
 	font-size: 24px;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	#education {
 		text-align: center;
 		margin: 25px 0px 15px 0px;
@@ -234,10 +234,10 @@
 	font-size: 24px;
 }
 #skillChartWrapper { /* Skill Chart */
-	width: 70%;
+	width: 80%;
 	margin: 0px auto;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	#skills h1 {
 		margin: 25px 0px 15px 0px;
 	}
@@ -357,6 +357,8 @@
 	font-size: 26px;
 }
 /* Notable Projects */
+#projects {
+}
 #projects h1 {
 	font-family: 'Bevan', Arial;
 	text-align: center;
@@ -366,12 +368,12 @@
 	margin-bottom: 15px;
 }
 .project_entries p:first-child {
-	font-size: 24px;
+	font-size: 16px;
 	border-left: 5px solid rgb(51, 122, 183);
 	padding-left: 3px;
 }
 .project_entries a {
-	font-size: 24px;
+	font-size: 16px;
 }
 /*****End of sub_section_experience*****/
 
@@ -379,8 +381,8 @@
 
 
 
-/*****Start of sub_section_experience*****/
+/*****Start of sub_section_created*****/
 #footer {
 	text-align: center;
 }
-/*****End of sub_section_experience*****/
+/*****End of sub_section_created*****/

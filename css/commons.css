@@ -1,16 +1,16 @@
 /* Flex Row */
 .flex_row {
 	display: flex;
-	flex-flow: row nowrap;
+	flex-flow: row wrap;
 	justify-content: space-between; 	/* Flex Items Horizontal Positioning */
 }
 .flex_row > div {
 	flex: 1;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
 	.flex_row {
-		flex-flow: column nowrap;
+		flex-flow: column wrap;
 	}
 }
 

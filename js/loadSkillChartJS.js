@@ -23,8 +23,12 @@ function loadSkillChart () {
 			ticks: {
 				min: 0,
 				max: 100,
-				maxTicksLimit: 5
+				maxTicksLimit: 5,
+				fontSize: 16
 				//, display: false
+			},
+			pointLabels: { 
+				fontSize:20
 			}
 		}/*,
 		pieceLabel: {
@@ -34,6 +38,7 @@ function loadSkillChart () {
 		}*/
 	};
 	
+	Chart.defaults.global.defaultFontSize = 30;
 	var ctx = document.getElementById("skillChart");
 	var skillChart = new Chart(ctx, {
 		type: 'radar',
